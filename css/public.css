@@ -1,0 +1,114 @@
+html, body {
+    color: #000;
+    background: rgb(235, 249, 249);
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del, ins, a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+legend {
+    color: #000;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+input, button, textarea, select {
+    *font-size: 100%;
+}
+
+.clear:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type=button], input[type=submit] {
+    -webkit-appearance: button;
+}
+
+.current {
+    background-color: rgb(235, 249, 249);
+}
+
+.footer {
+    width: 100%;
+    border-top: 2px solid rgb(238, 238, 238);
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(186, 228, 253);
+    text-align: center;
+    line-height: 50px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+    color: grey;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+

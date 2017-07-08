@@ -1,0 +1,15 @@
+.nav-menu{
+    width: 130px;
+    background-color: rgb(235,249,249);
+    position: absolute;
+    border: 5px solid #cccccc;
+    top: 45px;
+    z-index: 1;
+    display: none;
+}
+.nav-menu li{
+    height: 20px;
+    font: 400 20px/20px "黑体";
+    float: left;
+    margin: 10px 0;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+<body>
+<div class="sign-header clear">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="">
+    </div>
+    <div class="welcome-sign">欢迎注册</div>
+    <div class="have-account">已有账号？请<a href="index.html">登录</a></div>
+</div>
+<div class="container w clear">
+    <div class="reg-form">
+        <div id="form_account" class="form-input">
+            <div class="form-title">用户名</div>
+            <input type="text" placeholder="您的账户名和登录名">
+            <div class="reminder"></div>
+        </div>
+        <div id="form_password" class="form-input">
+            <div class="form-title">设置密码</div>
+            <input type="password" placeholder="建议至少使用两种字符组合">
+            <div class="reminder"></div>
+        </div>
+        <div id="form_sure_account" class="form-input">
+            <div class="form-title">确认密码</div>
+            <input type="password" placeholder="请再次输入密码">
+            <div class="reminder"></div>
+        </div>
+        <div id="form_phone" class="form-input">
+            <div class="form-title">手机号</div>
+            <input type="text" placeholder="建议使用常用手机">
+            <div class="reminder"></div>
+        </div>
+        <div id="form_pic_verification" class="form-input">
+            <div class="form-title">验证码</div>
+            <input type="text" placeholder="请输入验证码">
+            <div class="reminder"></div>
+            <div class="verification-pic">
+                <img src="images/verification.jpg" alt="">
+            </div>
+        </div>
+        <div id="form_phone_verification" class="form-input">
+            <div class="form-title">手机验证码</div>
+            <input type="text" placeholder="请输入手机验证码">
+            <div class="reminder"></div>
+            <button class="get-verification">获取验证码</button>
+        </div>
+        <div class="form-protocol">
+            <input type="checkbox" name="agreen" checked>
+            "阅读并同意"
+            <a href="#">《本站注册协议》</a>
+            <a href="#">《隐私政策》</a>
+        </div>
+        <div id="submit-sign" class="form-submit">
+            <a href="#">注&nbsp;&nbsp;&nbsp;册</a>
+        </div>
+    </div>
+</div>
+<script>
+    function $(id) {
+        return document.getElementById(id)
+    }
+    $("form_account").children[1].onfocus = function () {
+        this.value = "";
+        $("form_account").children[2].innerHTML = "";
+    }
+    $("form_account").children[1].onblur = function () {
+        if (this.value != "黄志鸿") {
+            $("form_account").children[2].style.color = "red";
+            $("form_account").children[2].innerHTML = "请输入黄志鸿";
+        }
+        if (this.value == "黄志鸿") {
+            $("form_account").children[2].style.color = "green";
+            $("form_account").children[2].innerHTML = "输入正确";
+        }
+    }
+    $("form_password").children[1].onfocus = function () {
+        this.value = "";
+        $("form_password").children[2].innerHTML = "";
+    }
+    $("form_password").children[1].onblur = function () {
+        that = this;
+        if (this.value.length < 8) {
+            $("form_password").children[2].style.color = "red";
+            $("form_password").children[2].innerHTML = "密码不能小于8位数";
+        }
+    }
+    $("form_sure_account").children[1].onfocus = function () {
+        this.value = "";
+        $("form_sure_account").children[2].innerHTML = "";
+    }
+    $("form_sure_account").children[1].onblur = function () {
+        if (this.value == that.value) {
+            $("form_sure_account").children[2].style.color = "green";
+            $("form_sure_acc    ount").children[2].innerHTML = "√";
+        } else {
+            $("form_sure_account").children[2].style.color = "red";
+            $("form_sure_account").children[2].innerHTML = "请输入相同的密码";
+        }
+    }
+    $("form_phone").children[1].onfocus = function () {
+        this.value = "";
+        $("form_sure_account").children[2].innerHTML = "";
+    }
+    $("form_phone").children[1].onblur = function () {
+        if (this.value.length < 11 || this.value.length > 11) {
+            $("form_phone").children[2].style.color = "red";
+            $("form_phone").children[2].innerHTML = "请输入正确的手机号";
+        } else {
+            $("form_phone").children[2].style.color = "green";
+            $("form_phone").children[2].innerHTML = "√";
+        }
+    }
+
+    var timer = null;
+    $("form_phone_verification").children[3].onclick = function () {
+        clearInterval(timer);
+        this.disabled = "disabled";
+        var these = this;
+        var num = 10;
+        timer = setInterval(function () {
+            num--;
+            these.innerHTML = num + "s后重新发送短信";
+            if (num <= 0) {
+                num = 59;
+                clearInterval(timer);
+                these.innerHTML = "获取验证码";
+                these.disabled = "";
+            }
+        }, 1000);
+    }
+</script>
+<div class="footer clear">
+    <div><span>友情链接：</span>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a></div>
+    <div>Copyright © 2017 广西旅游 www.huangzhihong.com本站联系邮箱：111111111@qq.com</div>
+</div>
+</body>
+</html>

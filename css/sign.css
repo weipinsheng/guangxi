@@ -1,0 +1,92 @@
+.sign-header{
+    height: 110px;
+    padding: 10px 100px;
+    background: url("../images/headbg.jpg") repeat-x left bottom;
+}
+.sign-header .logo{
+    width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    background-color: red;
+}
+.sign-header .welcome-sign{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    padding-left: 30px;
+    margin-top: 34px;
+}
+.sign-header .have-account{
+    font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+}
+.sign-header .have-account a{
+    color: #333;
+}
+.container{
+    width: 450px;
+}
+.form-input{
+    height: 38px;
+    border: 1px solid #cccccc;
+    margin-top: 20px;
+    line-height: 38px;
+    position: relative;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    color: #666;
+}
+.reminder{
+    position: absolute;
+    right: -220px;
+    top: 0;
+    width: 200px;
+    height: 38px;
+    color: red;
+}
+.form-input input{
+    border:none;
+    vertical-align: middle;
+    position: absolute;
+    top: 8px;
+    left: 125px;
+    background-color: rgb(235,249,249);
+    outline: none;
+}
+.form-input input::placeholder{
+    font: 400 16px/38px "黑体";
+    color: #cccccc;
+}
+.verification-pic{
+    position: absolute;
+    top: 1px;
+    right: 0;
+}
+.get-verification{
+    height: 38px;
+    padding: 0 2px;
+    background-color: rgb(186, 228, 253);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.form-protocol{
+    margin: 10px 0;
+    font: 400 16px/38px "黑体";
+}
+.form-submit{
+    height: 38px;
+    background-color: rgb(150,255,200);
+    line-height: 38px;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-submit a{
+    color: #FFFFFF;
+}

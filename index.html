@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/Slider.css">
+    <link rel="stylesheet" href="css/navMenu.css">
+</head>
+<body>
+<div class="login-box" id="login_box">
+    <div class="login-form" id="login_form">
+        <div class="login-close" id="login_close"><span>×</span></div>
+        <div class="login-table">
+            <div class="username">
+                <span></span>
+                <input type="text" placeholder="请输入用户名">
+            </div>
+            <div class="password">
+                <span></span>
+                <input type="text" placeholder="请输入密码">
+            </div>
+            <div class="find-password"><a href="#">忘记密码</a></div>
+            <div class="login-btn">
+                <a href="#">登&nbsp;&nbsp;&nbsp;录</a>
+            </div>
+            <div class="login-footer">
+                <a href="#"><i class="qq"></i><span>QQ</span></a>
+                <a href="#"><i class="weixin"></i><span>微信</span></a>
+                <a href="sign.html" class="sign-right"><i class="sign"></i><span>立即注册</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <div><p id="header_time"></p>
+        <div class="login"><a href="javascript:" id="login">登录</a> | <a href="sign.html" id="sign">注册</a></div>
+    </div>
+    <script>
+        var login = document.getElementById("login");
+        var sign = document.getElementById("sign");
+        var login_box = document.getElementById("login_box");
+        var login_close = document.getElementById("login_close").children[0];
+        login.onclick = function (event) {
+            login_box.style.display = "block";
+            var event = event || window.event;
+            if (event && event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else {
+                event.cancelBubble = true;
+            }
+        }
+        login_close.onclick = function () {
+            login_box.style.display = "none";
+        }
+    </script>
+    <script src="js/time.js"></script>
+    <div>
+        <img src="images/header-img.jpg" alt="">
+        <div class="header-logo">
+            <div class="header-logo1">
+                <span>遍</span>
+                <span>行</span>
+                <span>天</span>
+                <span>下</span>
+            </div>
+            <div class="header-logo2">
+                <span>心</span>
+                <span>仪</span>
+                <span>广</span>
+                <span>西</span>
+            </div>
+        </div>
+    </div>
+    <ul class="header-nav" id="header_nav">
+        <li>
+            <a href="index.html">网站首页</a>
+        </li>
+        <li>
+            <a href="video.html">视频</a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">电视剧</a></li>
+                    <li><a href="#">综艺</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">VIP影院</a></li>
+                    <li><a href="#">动漫</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="hotel.html">酒店</a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">情侣酒店</a></li>
+                    <li><a href="#">青年旅社</a></li>
+                    <li><a href="#">三星酒店</a></li>
+                    <li><a href="#">四星酒店</a></li>
+                    <li><a href="#">五星酒店</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="picture.html">图片</a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">微距摄影</a></li>
+                    <li><a href="#">高清动漫</a></li>
+                    <li><a href="#">头像</a></li>
+                    <li><a href="#">风景</a></li>
+                    <li><a href="#">小清新</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="food.html">美食</a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">大众点评</a></li>
+                    <li><a href="#">美食天下</a></li>
+                    <li><a href="#">美食博客</a></li>
+                    <li><a href="#">POCO美食</a></li>
+                    <li><a href="#">美食杰</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="message.html">留言</a>
+
+        </li>
+        <li>
+            <a href="contact.html">联系我们</a>
+            <div class="nav-menu erweima">
+                <ul >
+                    <li><img src="images/erweima.jpg" alt=""></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <script>
+        var header_nav = document.getElementById("header_nav");
+        var header_nav_lis = header_nav.children;
+        for (var i = 0; i < header_nav_lis.length; i++) {
+            header_nav_lis[i].onmouseover = function () {
+                this.children[1].style.display = "block";
+            }
+            header_nav_lis[i].onmouseout = function () {
+                this.children[1].style.display = "none";
+            }
+        }
+    </script>
+</div>
+<div class="tour-news">‘
+    <div class="tour-news-title">旅游资讯</div>
+    <div class="tour-news-content">
+        <div class="w-slider" id="w_slider">
+            <div class="slider" id="js_slider">
+                <div class="main-slider" id="main_slider">
+                    <div class="main-slider-img"><img src="images/slider-1.jpg"></div>
+                    <div class="main-slider-img"><img src="images/slider-2.jpg"></div>
+                    <div class="main-slider-img"><img src="images/slider-3.jpg"></div>
+                    <div class="main-slider-img"><img src="images/slider-4.jpg"></div>
+                    <div class="main-slider-img"><img src="images/slider-5.jpg"></div>
+                </div>
+            </div>
+            <div class="ctrl-slider" id="ctrl_slider">
+                <span class="ctrl-slider-prev"><</span>
+                <span class="ctrl-slider-next">></span>
+            </div>
+            <script src="js/slider-on.js"></script>
+            <script src="js/animate.js"></script>
+        </div>
+        <div class="tour-news-links">
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[南宁] 南宁良庆区举办第七届“火龙果”文化旅游节</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[柳州] 广西三江：韭菜风情引客来</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[桂林] 第十一届恭城月柿节火热进行中</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[玉林] “三月三•五彩歌圩” 玉林市第三届山歌歌王大赛</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[南宁] 南宁良庆区举办第七届“火龙果”文化旅游节</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[钦州] 广西钦州蚝情节将于10月31日至11月2日举行	</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[北海] 北海银滩景区将于5月2日举办沙雕大赛</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[防城港] 2015防城港首届“台湾美食嘉年华”开幕在即</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[梧州] 品原味岭南 观印象梧州</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[贵港] 平南首届“石硖龙眼”特色文化旅游活动隆重举行</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[崇左] 欢歌侬垌，明仕传承	</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[来宾] “金凤凰”的葡萄熟了</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[百色] 古龙山大峡谷风景区简介	</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[河池] 第十五届河池铜鼓山歌艺术节将在罗城举行</a></span>
+            <span><img src="images/a-background.jpg" alt=""><a href="#">[贺州] 黄姚古镇邮票中国旅游日全国发</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="buty-place clear">
+    <div class="tour-news-title">旅游资讯</div>
+    <div class="tour-place" id="js_tour_place">
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/guilin.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/detian.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/sanjiang.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/qingxiushan.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/jiuqvwan.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/baise.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/jiahecheng.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+        <div class="tour-place-detail">
+            <div class="tour-place-img">
+                <img src="images/beihai.jpg" alt="">
+            </div>
+            <div class="tour-place-explain">
+                景区名称: 桂林靖江王府<br>
+                景区所在地: 桂林城区正中心<br>
+                景区类型: 名胜古迹<br>
+                景区等级: AAAAA<br>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer clear">
+    <div><span>友情链接：</span>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a></div>
+    <div>Copyright © 2017 广西旅游 www.huangzhihong.com本站联系邮箱：111111111@qq.com</div>
+
+</div>
+</body>
+</html>

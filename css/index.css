@@ -1,0 +1,268 @@
+.header{
+	width:1200px;
+	height: 400px;
+	padding: 5px 10px 10px 10px;
+	/*background-color: rgb(235,249,249);*/
+	margin: 0 auto;
+	position: relative;
+}
+.login-box{
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index:2;
+	display: none;
+}
+.login-close{
+}
+.login-form{
+	width: 350px;
+	height: 360px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border: 1px solid #cccccc;
+	background-color: rgb(235,249,249);
+	margin-left: -175px;
+	margin-top: -180px;
+
+}
+.login-close{
+	height: 20px;
+	padding: 5px;
+}
+.login-close span{
+	float: right;
+	font: 700 20px/20px "黑体";
+	cursor: pointer;
+	user-select: none;
+}
+.login-close span:hover{
+	border: 1px solid #cccccc;
+ }
+.login-table{
+	width: 250px;
+	margin: 50px auto;
+}
+.username,.password{
+	height: 38px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	line-height: 38px;
+	position: relative;
+}
+.username input,
+.password input{
+	border:none;
+	vertical-align: middle;
+	position: absolute;
+	top: 8px;
+	left: 50px;
+	background-color: rgb(235,249,249);
+	outline: none;
+}
+.find-password{
+	height: 30px;
+	margin-top: 20px;
+}
+.find-password a{
+	float: right;
+	font-size: 14px;
+	color: #aaaaff;
+}
+.login-btn{
+	width: 250px;
+	height: 38px;
+	background-color: rgb(150,255,200);
+	line-height: 38px;
+	text-align: center;
+	margin-top: 10px;
+}
+.login-btn a{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+}
+.username span{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: url("../images/pwd-icons-new.png") no-repeat 0 0;
+}
+
+.password span{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: url("../images/pwd-icons-new.png") no-repeat -48px 0;
+}
+.login-footer{
+	margin-top: 50px;
+	position: relative;
+}
+.login-footer a{
+	display: inline-block;
+}
+.login-footer i{
+	width: 20px;
+	display: inline-block;
+	background: url("../images/QQ-weixin.png") no-repeat;
+}
+.login-footer .sign{
+	width: 20px;
+	display: inline-block;
+	background: url("../images/pwd-icons-new.png") no-repeat -104px -75px;
+}
+.login-footer span ,
+.login-footer i{
+	line-height: 20px;
+	height: 20px;
+	float: left;
+}
+.login-footer .sign-right{
+	float: right;
+}
+.login-footer i.qq{
+	background-position: 0 0;
+}
+.login-footer i.weixin{
+	background-position: -20px 0;
+}
+.header p{
+	font: 700 20px/20px "微软雅黑";
+	float: left;
+}
+.header .login{
+	float: right;
+}
+.header img{
+	margin-top: 5px;
+}
+.header-logo{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.header-logo1,.header-logo2{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	margin: 10px;
+}
+.header-logo2{
+	margin-left: 100px;
+}
+.header-logo span{
+	font-weight: bold;
+	font-size: 50px;
+	font-family: "微软雅黑";
+	display: inline-block;
+	margin: 0 10px;
+	color: red;
+	transition: all 1.5s;
+	-webkit-animation:change 2.5s infinite;
+	-o-animation:change 2.5s infinite;
+	animation: change 2.5s infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;
+}
+.header-logo:hover span{
+	margin:0;
+
+}
+@keyframes change {
+	0%{color:rgb(255,255,255);}
+	50%{color:rgb(0,222,254);}
+	100%{color:rgb(251,151,141);}
+}
+.header-nav {
+	height: 45px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 5px solid #cccccc;
+	position:static;
+}
+.header-nav li{
+	width: 130px;
+	float: left;
+	font: 700 30px/45px "宋体";
+	text-align: center;
+	position: relative;
+}
+.header-nav li a{
+	color: rgb(76,176,251);
+}
+.header-nav a:hover{
+	color: pink;
+}
+.erweima{
+	height: 150px;
+}
+.tour-news-content{
+	height: 450px;
+}
+.tour-news{
+	width: 1200px;
+	height: 525px;
+	padding: 5px 10px 10px 10px;
+	background-color: rgb(235,249,249);
+	margin: 0 auto;
+}
+.tour-news-title{
+	padding-left: 10px;
+	margin-bottom: 10px;
+	height: 60px;
+	font: 700 30px/60px sans-serif;
+	color: rgb(1,3,235);
+	background-color: rgb(186,228,253);
+}
+.tour-news-links {
+	width: 500px;
+	float: right;
+	border: 1px dashed #cccccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+.tour-news-links span {
+	display: block;
+	margin-top: 5px;
+}
+.tour-news-links span a{
+	color: rgb(0,222,254);
+}
+.buty-place{
+	width: 1200px;
+	margin: 0 auto;
+}
+.tour-place{
+	width: 1200px;
+}
+.tour-place-img{
+	width: 290px;
+	height: 193px;
+	overflow: hidden;
+}
+.tour-place-img img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.tour-place-img img:hover{
+	transform: scale(1.1);
+}
+.tour-place-explain{
+	padding: 5px;
+}
+.tour-place-detail{
+	width: 290px;
+	height: 300px;
+	margin: 3px;
+	font-family: "华文宋体";
+	font-size: 18px;
+	color: rgb(1,178,254);
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	float: left;
+}

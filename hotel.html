@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店</title>
+    <link rel="stylesheet" href="css/public.css">
+    <style>
+        .sign-header {
+            height: 110px;
+            padding: 10px 100px;
+            background: url("images/headbg.jpg") repeat-x left bottom;
+            overflow: hidden;
+        }
+
+        .sign-header .logo {
+            width: 160px;
+            height: 50px;
+            float: left;
+            margin-top: 24px;
+            background-color: red;
+        }
+
+        .sign-header .welcome-sign {
+            float: left;
+            height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            color: #333;
+            padding-left: 30px;
+            margin-top: 34px;
+        }
+
+        .sign-header .have-account {
+            font-size: 16px;
+            float: right;
+            margin-top: 55px;
+            color: #999;
+        }
+
+        .sign-header .have-account a {
+            color: #333;
+        }
+
+        .nav {
+            margin: 20px 0;
+            width: 700px;
+            border: 2px solid #cccccc;
+            border-radius: 10px;
+            float: right;
+        }
+
+        .nav-ul li {
+            text-align: center;
+            font: 400 18px/60px "黑体";
+            float: left;
+            width: 80px;
+            margin: 10px;
+        }
+
+        .contain-box {
+        }
+
+        .hotel-lis {
+            width: 1050px;
+            height: 140px;
+            margin: 0 auto;
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .hotel-lis li {
+            margin: 5px;
+            float: left;
+        }
+
+        .hotel-appoi {
+            width: 400px;
+        }
+
+        .hotel-appoi-tab {
+            margin: 10px;
+            border: 2px dashed #cccccc;
+            padding: 5px;
+            border-radius: 5px;
+            color: #666;
+        }
+
+        .hotel-w {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .hotel-appoi-tab-header {
+            font: 700 20px/20px "黑体";
+            text-align: center;
+        }
+
+        .hotel-equip-tab {
+            color: #666666;
+        }
+
+        .hotel-equip-tab td {
+            border: 1px solid #cccccc;
+        }
+
+        .hotel-equip-tab th {
+            font: 700 20px/20px "黑体";
+            text-align: center;
+            padding: 5px;
+        }
+
+        .hotel-equip-tab td {
+            padding: 5px;
+        }
+        .contactus{
+            margin: 10px 0;
+            width: 400px;
+        }
+        .contactus .lianxi{
+            font: 700 20px/20px "黑体";
+        }
+        .contactus li{
+            border-bottom: 1px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="sign-header clear">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="">
+    </div>
+    <div class="welcome-sign">首页>酒店</div>
+    <div class="nav">
+        <ul class="nav-ul">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="video.html">视频</a></li>
+            <li><a href="picture.html">图片</a></li>
+            <li><a href="food.html">美食</a></li>
+            <li><a href="hotel.html">酒店</a></li>
+            <li><a href="message.html">留言</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<div class="contain-box w clear">
+    <div class="hotel-lis">
+        <ul>
+            <li>
+                <img src="images/g.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/g.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/g.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/g.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/g.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="hotel-w">
+
+        <div class="hotel-appoi">
+            <div class="hotel-appoi-tab hotel-appoi-tab-header">房间预订|Reservatoin</div>
+            <div class="hotel-appoi-tab">
+                <span>入住时间：</span>
+                <select>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+                <span>年</span>
+                <select name="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span>月</span>
+                <select name="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+                <span>日</span>
+            </div>
+            <div class="hotel-appoi-tab">
+                <span>离店时间：</span>
+                <select>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+                <span>年</span>
+                <select name="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span>月</span>
+                <select name="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+                <span>日</span>
+            </div>
+            <div class="hotel-appoi-tab">
+                <span>预订房间数：</span><input style="width:25px;" type="text">
+            </div>
+            <div class="hotel-appoi-tab">
+                <span>成人：</span><input style="width:25px;" type="text">
+                <span>儿童：</span><input style="width:25px;" type="text">
+            </div>
+        </div>
+        <div class="hotel-equip">
+            <table class="hotel-equip-tab">
+                <tr>
+                    <th>酒店服务</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">通用设施</td>
+                    <td>免费停车场</td>
+                    <td>免费旅游交通图</td>
+                </tr>
+                <tr>
+                    <td>吸烟区</td>
+                    <td>前台贵重物品保险柜</td>
+                </tr>
+                <tr>
+                    <td>无烟楼层</td>
+                    <td>叫车服务</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">服务项目</td>
+                    <td>旅游票务服务</td>
+                    <td>接机服务</td>
+                </tr>
+                <tr>
+                    <td>旅游票务服务</td>
+                    <td>叫醒服务</td>
+                </tr>
+                <tr>
+                    <td>旅游票务服务</td>
+                    <td>接机服务</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">客房设施</td>
+                    <td>客房WIFI覆盖免费</td>
+                    <td>国内长途电话</td>
+                </tr>
+                <tr>
+                    <td>书桌</td>
+                    <td>小冰箱</td>
+                </tr>
+                <tr>
+                    <td>更多...</td>
+                    <td>更多...</td>
+                </tr>
+            </table>
+        </div>
+        <div class="hotel-manage">
+            <table class="hotel-equip-tab">
+                <tr>
+                    <th>酒店政策</th>
+                </tr>
+                <tr>
+                    <td>入住和离店</td>
+                    <td>入住时间： 14:00</td>
+                    <td>离店时间： 12:00以前</td>
+                </tr>
+                <tr>
+                    <td>儿童政策</td>
+                    <td colspan="2">不接受18岁以下儿童单独入住</td>
+                </tr>
+                <tr>
+                    <td>宠物</td>
+                    <td colspan="2">不可携带宠物</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="contactus">
+            <div class="lianxi">联系方式</div>
+            <ul>
+                <li>电话：17671676267</li>
+                <li>QQ：1002074640</li>
+                <li>传真：111111111</li>
+                <li>邮编：430074</li>
+                <li>地址：湖北武汉市中南民族大学</li>
+                <li>E-mail： weipinsheng_good@163.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer clear">
+    <div><span>友情链接：</span>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a>
+        <a href="#">百度</a></div>
+    <div>Copyright © 2017 广西旅游 www.huangzhihong.com本站联系邮箱：111111111@qq.com</div>
+</div>
+</body>
+</html>
